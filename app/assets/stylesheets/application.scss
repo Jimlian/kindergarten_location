@@ -183,6 +183,46 @@
     font-size: 5em
 }
 
+.carousel-caption a{
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: transparent;
+}
+
+.carousel-caption:hover,
+.carousel-caption:focus{
+  color: #E0FFFF;
+  background-color: transparent;
+}
+
+.badge{
+  background-color:#D4E157;
+}
+
+// .carousel-caption > li > a{
+//
+// }
+//
+// .carousel-caption > li > a:hover,
+// .carousel-caption > li > a:focus{
+//   color: #E0FFFF;
+//   background-color: transparent;
+// }
+//
+// .carousel-caption > .active > a ,
+// .carousel-caption > .active > a :hover,
+// .carousel-caption > .active > a:focus{
+//   color: #E0FFFF;
+//   background-color: transparent;
+// }
+//
+// .carousel-caption > .open > a,
+// .carousel-caption > .open > a:focus,
+// .carousel-caption > .open > a:hover{
+//   color: #E0FFFF;
+//   background-color: transparent;
+// }
+
 @media (max-width: 600px) {
     .carousel-caption {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -408,7 +448,7 @@ footer a:hover {
 }
 
 .kindergarten-back{
-  background: asset-data-url("kindergarten back2.jpg");
+  background: asset-data-url("kindergarten back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom:  120px;
@@ -436,7 +476,7 @@ footer a:hover {
   }
 
   .info-top{
-    margin-top: 15px;
+    margin-top: 30px;
     h3{
       margin-left: 100px;
       display: inline;
@@ -465,6 +505,7 @@ footer a:hover {
   }
 
   .connact{
+    margin-top: 30px;
     float: right;
     display: inline;
     width: 35%;
@@ -485,35 +526,17 @@ footer a:hover {
 
 
 //--app/views/kindergartens/index.html.erb start
-//---------table---------
-
-
-
-.custab{
-  border: 1px solid #ccc;
-
-  padding: 5px;
-  margin: 5% 0;
-  box-shadow: 3px 3px 2px #ccc;
-
-  transition: 0.5s;
-}
-
-.custab:hover{
-  box-shadow: 3px 3px 0px transparent;
-  transition: 0.5s;
-}
 
 //-----------auth-----------
 .margin-top-20{
   margin-top: 20px;
 }
 body{
-  background:asset-data-url('background.jpg');
-  background-size:100% 100%;
-  background-attachment: fixed;
-  background-repeat:no-repeat;
-  font-family: 'Open Sans', sans-serif;
+  // background:asset-data-url('background.jpg');
+  // background-size:100% 100%;
+  // background-attachment: fixed;
+  // background-repeat:no-repeat;
+  // font-family: 'Open Sans', sans-serif;
   // padding-bottom: 40px;
 }
 .auth h1{
@@ -703,6 +726,22 @@ body{
 //--app/views/kindergartens/index.html.erb end
 
 //--app/veiws/kindergartens/index_table.html.erb start
+//---------table---------
+.custab{
+  border: 1px solid #ccc;
+
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
 // ---------table---------
 .container_table {
 	// position: absolute;
@@ -840,11 +879,12 @@ $green: #87d3b7;
 //--app/views/kindergartens/index.html.erb end
 
 //--app/views/kindergartens/show.html.erb start
-.kindergarten-show-back {
+.kindergarten-index-back {
   background: asset-data-url("jumbotron.jpg");
   background-size: cover;
-  padding-bottom: 70px;
-  background-position: center;
+  // padding-bottom: 70px;
+  // background-position: center;
+  background-repeat: no-repeat;
   margin: -20px 0 0 0;
 }
 //--app/views/kindergartens/show.html.erb end

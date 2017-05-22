@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511062956) do
+ActiveRecord::Schema.define(version: 20170521153710) do
 
   create_table "kindergarten_relationships", force: :cascade do |t|
     t.integer  "kindergarten_id"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 20170511062956) do
     t.integer  "phone"
     t.boolean  "is_hidden",   default: true
     t.integer  "user_id"
+    t.string   "location"
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "sort"
+    t.boolean  "is_hidden",  default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   create_table "posts", force: :cascade do |t|

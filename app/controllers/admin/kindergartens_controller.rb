@@ -68,7 +68,7 @@ class Admin::KindergartensController < ApplicationController
     private
 
     def kindergarten_params
-      params.require(:kindergarten).permit(:title, :description, :fee, :phone, :is_hidden)
+      params.require(:kindergarten).permit(:title, :description, :fee, :phone, :is_hidden, :location)
     end
 
 end

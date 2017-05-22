@@ -7,13 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/kindergartens">途行</a>
+      <a class="navbar-brand" href="/kindergartens">雪绒花</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#good">如何途行</a></li>
+        <!-- <li><a href="#good">如何途行</a></li>
         <li><a href="#tour">发现途行</a></li>
-        <li><a href="#contact">了解途行</a></li>
+        <li><a href="#contact">了解途行</a></li> -->
           <% if !current_user %>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">加入途行
@@ -35,8 +35,8 @@
             <li><%= link_to("后台", admin_kindergartens_path) %></li>
             <% end %>
             <li><%= link_to("所有旅程", kindergartens_path) %></li>
-            <li> <%= link_to("我关注的行程", kindergartens_path) %></li>
-            <li> <%= link_to("我报名的旅程", kindergartens_path) %></li>
+            <!-- <li> <%= link_to("我关注的行程", kindergartens_path) %></li>
+            <li> <%= link_to("我报名的旅程", kindergartens_path) %></li> -->
             <li class="divider"> </li>
             <li><%= link_to("登出", destroy_user_session_path, method: :delete) %></li>
           </ul>
@@ -59,26 +59,29 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div id="cop1" class="item active">
-      <img src= "http://ongoo1pyy.bkt.clouddn.com/p1.png" >
+      <img src='<%= image_url 'welcome1.jpg' %>'>
       <div class="carousel-caption">
-        <h2>途&ensp;行</h2>
-        <p>你会了解旅行不是只有美图和朋友圈</p>
+        <h2><a href="/kindergartens">雪&ensp;绒&ensp;花</a></h2>
+        <p><a href="/kindergartens">我们希望您的孩子拥有这样的笑脸！</a></p>
+        <p class="badge"><a href="/kindergartens">探索</a></p>
       </div>
     </div>
 
     <div id="cop2" class="item">
-      <img src= "http://ongoo1pyy.bkt.clouddn.com/p3.png" >
+      <img src='<%= image_url 'welcome2.jpg' %>'>
       <div class="carousel-caption">
-        <h2>途&ensp;行</h2>
-        <p>你会发现生命原来可以很不一样</p>
+        <h2><a href="/kindergartens">雪&ensp;绒&ensp;花</a></h2>
+        <p><a href="/kindergartens">我们给孩子七彩童年！</a></p>
+        <p class="badge"><a href="/kindergartens">寻找</a></p>
       </div>
     </div>
 
     <div id="cop3" class="item">
-      <img src= "http://ongoo1pyy.bkt.clouddn.com/p2.png" >
+      <img src= '<%= image_url 'welcome3.jpg' %>'>
       <div class="carousel-caption">
-        <h2>途&ensp;行</h2>
-        <p>你能遇见更多和你一样不甘平庸的人</p>
+        <h2><a href="/kindergartens">雪&ensp;绒&ensp;花</a></h2>
+        <p><a href="/kindergartens">我们帮您陪伴孩子走向美好的未来！</a></p>
+        <p class="badge"><a href="/kindergartens">发现</a></p>
       </div>
     </div>
   </div>
@@ -86,17 +89,17 @@
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">上一页</span>
   </a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">下一页</span>
   </a>
 </div>
 
 
 
-<div  id="good" class="container text-center" style=
+<!-- <div  id="good" class="container text-center" style=
 " width: 100%;margin-bottom: 5px">
   <h3>途行</h3>
   <br>
@@ -202,7 +205,7 @@
        <img src="http://ongoo1pyy.bkt.clouddn.com/help.png" alt="help">
      </div>
     </div>
-  </div>
+  </div> -->
 
 
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
