@@ -2,9 +2,9 @@
   <div class="row">
   <div class="kindergarten-index-back">
   <% if !current_user %>
-    <h1 class="text-center">Welcom to WORK.LIFE <span>Review published jobs</span> </h1>
+    <h1 class="text-center">Welcom to WORK.LIFE <span>Review published kindergartens</span> </h1>
   <% else %>
-  <h1 class="text-center">Welcom to WORK.LIFE <span>Seek a good job!</span> </h1>
+  <h1 class="text-center">Welcom to WORK.LIFE <span>Seek a good kindergarten!</span> </h1>
   <% end %>
 
   <!--=== 工作地点下拉选单 ===-->
@@ -21,11 +21,11 @@
         <ul class="dropdown-menu" selection aria-labelledby="dropdownMenuDivider">
           <% @locations.each do |location| %>
           <li>
-            <%= link_to(location.name, jobs_path(:location => location.name)) %>
+            <%= link_to(location.name, kindergartens_path(:location => location.name)) %>
           </li>
           <% end %>
           <li>
-            <%= link_to("所有城市", jobs_path(:location => "所有城市") ) %>
+            <%= link_to("所有城市", kindergartens_path(:location => "所有城市") ) %>
           </li>
         </ul>
       </div>
